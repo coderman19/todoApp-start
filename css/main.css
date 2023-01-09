@@ -1,14 +1,25 @@
-html, body {
+@import "./reset.css";
+@import "./btn.css";
+@import "./fonts.css";
+@import "./vars.css";
+
+html,
+body {
   min-height: 100vh;
 }
 
 body {
-  background-color: #E4E5E7;
+  background-color: var(--bgColor);
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: Roboto, sans-serif;
 }
+/* a {
+  text-decoration: none;
+  color: gray;
+} */
 .aside {
   height: 400px;
 }
@@ -18,16 +29,19 @@ body {
 .d-flex {
   display: flex;
 }
+.card mb-4 {
+  background-color: var(--darkGray);
+}
 .task-title {
   font-weight: 400;
   padding-top: 5px;
 }
 .gray {
-  color: #BDBDBD;
+  color: var(--gray);
 }
 .task-title--done {
   text-decoration: line-through;
-  color: #CDCDCD;
+  color: var(--lightGray);
 }
 .task-item__buttons {
   display: flex;
@@ -51,30 +65,8 @@ body {
   font-weight: 300;
 }
 .empty-list__icon {
-  color: #42BE2A;
+  color: var(--green);
   font-size: 32px;
-}
-.btn-action {
-    background-color: #e0e5ea;
-    padding: 8px 10px;
-    cursor: pointer;
-    border: 0;
-    border-radius: 4px;
-    transition: opacity 0.2s ease-in;
-    opacity: 0.5;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-action:hover {
-    background-color: #e0e5ea;
-    opacity: 1;
-}
-
-.btn-action img {
-  pointer-events: none;
 }
 
 .none {
@@ -87,11 +79,15 @@ body {
 .copyright {
   margin-top: 40px;
   font-size: 14px;
-  color: gray;
+  color: var(--gray);
   text-align: center;
   margin-bottom: 30px;
   /* position: absolute; */
   /* bottom: 30px; */
   /* left: 0; */
   /* right: 0; */
+}
+
+.tgimage {
+  width: 18px;
 }

@@ -1,0 +1,11 @@
+:root {
+  --black: #171718;
+  --black-border: #26292d;
+  --white: #fff;
+  --green: #42be2a;
+  --gray: #bdbdbd;
+  --darkGray: #dfdfdf;
+  --lightGray: #cdcdcd;
+  --text-color: var(--black);
+  --bgColor: #707080;
+}
